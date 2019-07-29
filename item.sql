@@ -6,5 +6,5 @@ CREATE TABLE item (
     unit TEXT,
     unit_cost NUMERIC,
     supplier INTEGER REFERENCES supplier
-(id) NOT NULL
+(id) ON DELETE SET NULL
 );
